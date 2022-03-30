@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Header() {
   const navigation = [
     {
@@ -20,7 +18,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="sm:block sm:ml-6 bg-blue-900">
+    <div className=" bg-blue-900">
       <div className="flex space-x-4">
         {navigation.map((item) => (
           <a
