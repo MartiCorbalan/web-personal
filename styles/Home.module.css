@@ -1,6 +1,9 @@
 .container {
   background-color: black;
 }
+.container2{
+  background-color: gray;
+}
 
 .main {
   min-height: 100vh;

@@ -1,16 +1,33 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+
 module.exports = {
   content: [
     "./pages/**/**/*.{html,js}",
     "./components/**/*.{html,js}",
-    "./index.html",
+
   ],
   theme: {
-    colors: {
-      primary: "#00bcd4",
-    },
-    fontFamily: {
-      sans: ["Trebuchet MS", "sans-serif"],
+    extend: {
+        colors: {
+          primary: "#00bcd4",
+        },
+        fontFamily: {
+          fuente_titulo: ["Trebuchet MS", "sans-serif"],
+        },
+        animation: {
+          wiggle: 'wiggle 4s infinite;',
+        },
+        keyframes: {
+          wiggle: {
+            "50%": {
+              shadow: ["10px_20px_30px_red"]
+            },
+
+          }
+        },
+        boxShadow: {
+          sombra: '10px 20px 30px red',
+        }
+        
     },
   },
   plugins: [],

@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-import Header from "./components/header";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,17 +13,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+    
 
       <main className={styles.main}>
-        <section className="section-main">
-          <div className="box">
-            <div className="titulo">
-              <h1>CORBA'S WEB</h1>
+        <section className="section-main ">
+          <div className="box p-32 border-white border-solid 
+          border-t-[12px] border-l-[12px] border-r-[12px] border-b-[12px]
+          animate-wiggle"
+          >
+            <div className="m-0 leading-tight text-7xl text-white ">
+              <h1>CORBA WEB</h1>
             </div>
-            <nav>
+            <nav className="text-2x1 text-center text-white">
               <br></br>
-              <Link href="/components/main">
+              <Link href="/main">
                 <a className="text-gray-300">Entrar</a>
               </Link>
             </nav>
@@ -33,23 +36,8 @@ export default function Home() {
 
       <style jsx>
         {`
-          .titulo {
-            margin: 0;
-            line-height: 1.15;
-            font-size: 4rem;
-            color: white;
-          }
-          nav {
-            font-size: 24px;
-            text-align: center;
-            color: white;
-          }
-          .box {
-            padding: 5em;
-            border: 15px solid white;
+          .box { 
             animation: mymove 4s infinite;
-
-            width: 100%;
           }
           @keyframes mymove {
             50% {
