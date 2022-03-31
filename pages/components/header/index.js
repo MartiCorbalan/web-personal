@@ -18,8 +18,8 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-black text-white hover:bg-white hover:text-black">
-      <div className="flex sm:justify-between">
+    <div className=" bg-blue-900">
+      <div className="flex space-x-4">
         {navigation.map((item) => (
           <a
             key={item.name}

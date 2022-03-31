@@ -1,8 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { useRouter } from "next/router";
-import Link from "next/link";
 
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,12 +12,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-    
-
       <main className={styles.main}>
         <section className="section-main ">
-          <div className="box p-32 border-white border-solid 
-          border-t-[12px] border-l-[12px] border-r-[12px] border-b-[12px]
+          <div
+            className="box p-32 border-white border-solid 
+          border-[12px] 
           animate-wiggle"
           >
             <div className="m-0 leading-tight text-7xl text-white ">
@@ -36,7 +34,7 @@ export default function Home() {
 
       <style jsx>
         {`
-          .box { 
+          .box {
             animation: mymove 4s infinite;
           }
           @keyframes mymove {
