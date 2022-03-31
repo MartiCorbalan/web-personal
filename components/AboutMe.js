@@ -5,7 +5,7 @@ export default function AboutMe() {
       lloc: "Extreme Micro (Mataró)",
       data: "Març 2021 - Juny 2021",
       description: (
-        <ul>
+        <ul  className="text-lg">
           <li>- Desenvolupament Web</li>
           <li>- ERP (Odoo) </li>
           <li>- WordPress </li>
@@ -17,7 +17,7 @@ export default function AboutMe() {
       lloc: "Megastore Datasystem (Mataró)",
       data: "Octubre 2017 - Gener 2018",
       description: (
-        <ul>
+        <ul  className="text-lg">
           <li>- Suport tant en Hardware com en Software</li>
           <li>
             - Instal·lació, manteniment i reparació d'ordinadors i impresores.{" "}
@@ -29,7 +29,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web",
       lloc: "La Volta Mataró",
       description: (
-        <ul>
+        <ul  className="text-lg">
           <li>
             - Actualització completa de la pàgina web i manteniment de la
             mateixa
@@ -42,7 +42,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web ",
       lloc: "Tecnotrade Group",
       description: (
-        <ul>
+        <ul  className="text-lg">
           <li>- Actualització completa de la pàgina web</li>
         </ul>
       ),
@@ -52,7 +52,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web ",
       lloc: "Dea Essence",
       description: (
-        <ul>
+        <ul  className="text-lg">
           <li>
             - Actualització i maquetació completa de la pàgina web i manteniment
             de la mateixa
@@ -75,7 +75,7 @@ export default function AboutMe() {
 
   return (
     <>
-      <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1000px] m-auto">
+      <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
         {experienceItems.map((item, i) => (
           <div
             key={item.i}
