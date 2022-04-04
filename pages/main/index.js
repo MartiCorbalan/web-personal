@@ -1,4 +1,7 @@
-import AboutMe from "../../components/AboutMe";
+
+import Footer from "../../components/footer";
+import AboutMe from "../AboutMe";
+import Portafoli from "../Portafoli";
 import Header from "/components/header";
 
 export default function Main() {
@@ -92,18 +95,11 @@ export default function Main() {
             </div>
           </div>
         </section>
-        <br></br>
-        <section>
-        <div className=" max-w-5xl m-auto px-4 border-[8px] ">
-          <div className="text-white  text-center ">
-            <h1 className="text-4xl">Experiència laboral</h1>
-            <p className="text-xl">Frontend Developer</p>
-          </div>
-          
-        </div>
-        <br></br>
-          <AboutMe />
-        </section>
+   
+
+        <footer>
+          <Footer/>
+        </footer>
       </div>
     </>
   );

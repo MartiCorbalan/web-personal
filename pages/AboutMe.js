@@ -1,3 +1,4 @@
+import Header from "/components/header";
 export default function AboutMe() {
   const experienceItems = [
     {
@@ -75,6 +76,19 @@ export default function AboutMe() {
 
   return (
     <>
+    <Header/>
+    
+        
+    <div className="w-full min-h-screen bg-black ">
+    <br></br>
+    <div className=" max-w-5xl m-auto px-4 border-[8px] ">
+          <div className="text-white  text-center ">
+            <h1 className="text-4xl">Martí Corbalan Cruz</h1>
+            <p className="text-xl">Frontend Developer</p>
+        </div>
+          
+    </div>
+    <br></br>
       <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
         {experienceItems.map((item, i) => (
           <div
@@ -97,6 +111,8 @@ export default function AboutMe() {
           </div>
         ))}
       </div>
+    </div>
+      
     </>
   );
 }

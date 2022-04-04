@@ -7,18 +7,18 @@ export default function Header() {
     },
     {
       name: "About Me",
-      href: "/about",
+      href: "/AboutMe",
       actual: false,
     },
     {
       name: "Projects",
-      href: "/projects",
+      href: "/Portafoli",
       actual: false,
     },
   ];
 
   return (
-    <div className="bg-black text-white hover:bg-white hover:text-black">
+    <div className="bg-black text-white hover:bg-white hover:text-black ">
       <div className="flex sm:justify-between">
         {navigation.map((item) => (
           <a
@@ -27,7 +27,7 @@ export default function Header() {
             className={
               (item.actual
                 ? "bg-gray-900 text-white"
-                : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                : "text-gray-300 hover:bg-gray-700 hover:text-white ",
               "px-3 py-2 rounded-md text-sm font-medium")
             }
           >
