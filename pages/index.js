@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-
 import Link from "next/link";
 
 export default function Home() {
@@ -17,7 +16,10 @@ export default function Home() {
           <div
             className="box p-32 border-white border-solid 
           border-[12px] 
-          animate-wiggle"
+          animate-wiggle
+          
+          text-center
+          "
           >
             <div className="m-0 leading-tight text-7xl text-white ">
               <h1>CORBA WEB</h1>

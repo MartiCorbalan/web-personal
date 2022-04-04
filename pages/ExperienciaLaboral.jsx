@@ -1,12 +1,13 @@
 import Header from "/components/header";
-export default function AboutMe() {
+import Footer from "/components/footer";
+export default function ExperienciaLaboral() {
   const experienceItems = [
     {
       titol: "Desenvolupador Web (pràctiques)",
       lloc: "Extreme Micro (Mataró)",
       data: "Març 2021 - Juny 2021",
       description: (
-        <ul  className="text-lg">
+        <ul className="text-lg">
           <li>- Desenvolupament Web</li>
           <li>- ERP (Odoo) </li>
           <li>- WordPress </li>
@@ -18,7 +19,7 @@ export default function AboutMe() {
       lloc: "Megastore Datasystem (Mataró)",
       data: "Octubre 2017 - Gener 2018",
       description: (
-        <ul  className="text-lg">
+        <ul className="text-lg">
           <li>- Suport tant en Hardware com en Software</li>
           <li>
             - Instal·lació, manteniment i reparació d'ordinadors i impresores.{" "}
@@ -30,7 +31,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web",
       lloc: "La Volta Mataró",
       description: (
-        <ul  className="text-lg">
+        <ul className="text-lg">
           <li>
             - Actualització completa de la pàgina web i manteniment de la
             mateixa
@@ -43,7 +44,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web ",
       lloc: "Tecnotrade Group",
       description: (
-        <ul  className="text-lg">
+        <ul className="text-lg">
           <li>- Actualització completa de la pàgina web</li>
         </ul>
       ),
@@ -53,7 +54,7 @@ export default function AboutMe() {
       titol: "Desenvolupador Web ",
       lloc: "Dea Essence",
       description: (
-        <ul  className="text-lg">
+        <ul className="text-lg">
           <li>
             - Actualització i maquetació completa de la pàgina web i manteniment
             de la mateixa
@@ -76,43 +77,43 @@ export default function AboutMe() {
 
   return (
     <>
-    <Header/>
-    
-        
-    <div className="w-full min-h-screen bg-black ">
-    <br></br>
-    <div className=" max-w-5xl m-auto px-4 border-[8px] ">
+      <Header />
+      <div className="w-full min-h-screen bg-black ">
+        <br></br>
+        <div className=" max-w-5xl m-auto px-4 border-[8px] ">
           <div className="text-white  text-center ">
             <h1 className="text-4xl">Martí Corbalan Cruz</h1>
             <p className="text-xl">Frontend Developer</p>
-        </div>
-          
-    </div>
-    <br></br>
-      <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
-        {experienceItems.map((item, i) => (
-          <div
-            key={item.i}
-            className=" border-[2px] text-white min-w-[300px] 2xl:h-auto rounded-[10px] w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]"
-          >
-            <h1>{item.titol}</h1>
-            <br></br>
-            <h2>{item.lloc}</h2>
-            <br></br>
-            <h3>{item.data}</h3>
-            <br></br>
-            <div>{item.description}</div>
-            <br></br>
-            {item.link && (
-              <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                <a href={item.link}>{item.lloc}</a>
-              </button>
-            )}
           </div>
-        ))}
+        </div>
+        <br></br>
+        <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
+          {experienceItems.map((item, i) => (
+            <div
+              key={item.i}
+              className=" border-[2px] text-white min-w-[300px] 2xl:h-auto rounded-[10px] w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]"
+            >
+              <h1>{item.titol}</h1>
+              <br></br>
+              <h2>{item.lloc}</h2>
+              <br></br>
+              <h3>{item.data}</h3>
+              <br></br>
+              <div>{item.description}</div>
+              <br></br>
+              {item.link && (
+                <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  <a href={item.link}>{item.lloc}</a>
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+        <br></br>
+        <footer>
+          <Footer />
+        </footer>
       </div>
-    </div>
-      
     </>
   );
 }

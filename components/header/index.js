@@ -6,8 +6,13 @@ export default function Header() {
       actual: false,
     },
     {
-      name: "About Me",
-      href: "/AboutMe",
+      name: "About me",
+      href: "/main",
+      actual: false,
+    },
+    {
+      name: "Experiència laboral",
+      href: "/ExperienciaLaboral",
       actual: false,
     },
     {
