@@ -40,3 +40,19 @@ h6 {
 p {
   font-size: 20px;
 }
+
+.box2{
+  display: grid;
+  font-weight: bold;
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.card{
+  width:  50%;
+  opacity: 0.8;
+  
+}

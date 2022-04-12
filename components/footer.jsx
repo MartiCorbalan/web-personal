@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
 import {
   faGithub,
   faLinkedin,
@@ -36,7 +36,7 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-white text-black hover:bg-black hover:text-white flex glex-wrap  justify-around  min-w-[30px]  ">
+      <div className="bg-white text-black hover:bg-black hover:text-white flex-wrap flex gap-8 justify-around  ">
         <div className=" flex-wrap gap-2 justify-around ">
           <div className="ml-11">
             <h3 className="ml-11">Xarxes Socials</h3>

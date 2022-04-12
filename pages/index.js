@@ -21,7 +21,7 @@ export default function Home() {
           text-center
           "
           >
-            <div className="m-0 leading-tight text-7xl text-white ">
+            <div className=" m-0 leading-tight text-7xl text-white ">
               <h1>CORBA WEB</h1>
             </div>
             <nav className="text-2x1 text-center text-white">

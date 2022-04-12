@@ -1,95 +1,78 @@
+
 import Footer from "../../components/footer";
 import Header from "/components/header";
+import { motion } from "framer-motion";
+import ExperienciaLaboral from "../ExperienciaLaboral";
+
+const variants = {
+  
+}
 
 export default function Main() {
-  const idiomes = [
-    {
-      titol: "Català - Natiu",
-    },
-    {
-      titol: "Castellà - Natiu",
-    },
-    {
-      titol: "Anglès",
-    },
-  ];
+ 
 
   return (
     <>
       <Header />
-      <div className="w-full h-full min-h-screen bg-black  ">
-        <br></br>
-        <div className=" max-w-5xl m-auto px-4 border-[8px] ">
-          <div className="text-white  text-center ">
-            <h1 className="text-4xl">Martí Corbalan Cruz</h1>
-            <p className="text-xl">Frontend Developer</p>
-          </div>
-        </div>
-        <br></br>
-        <div className=" border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
-          <div className=" pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto ">
-            <div className=" text-white min-w-[300px] 2xl:h-auto  w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]">
-              <h1>
-                Em dic Martí Corbalan i actualment tinc 20 anys.
-                <br></br>
-                <br></br>
-              </h1>
-              <h1 className="xl:text-2xl">He estudiat:</h1>
-              <ul>
-                <li>- Cicle mitjà de Xarxes microinformàtiques</li>
-                <li>
-                  - Grau superior de desenvolupament &nbsp;&nbsp;d'aplicacions
-                  multiplataforma
-                </li>
-              </ul>
-              <br></br>
+     <section className="   bg-[#6F6892]  min-h-[300px] ">
+      
+        <div className=" text-center  ">
+         
+          <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
+            Martí Corbalan Cruz 
+          </motion.div> 
+         
+          <div className="   cursor-default p-[50px] ">
+              <p className="w-[400px]">
               Estic fent els primers passos com a desenvolupador frontend modern
-              <br></br>
-              Un cop he agafat un notable domini en HTML i CSS, ara estic
-              centrat en el desenvolupament d'aplicacions React i utilitzant
-              llibreries com Redux, Material UI, React Router
-            </div>
-            {/* ********************** */}
-            <div className="  text-white min-w-[300px] 2xl:h-auto  w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]">
-              <h1 className="">Idiomes:</h1>
-              <br></br>
-              {idiomes.map((item, i) => (
-                <div
-                  key={item.i}
-                  className="text-white text-left  w-3/4 pt-[10px] pb-[10px]"
-                >
-                  <h2>{item.titol}</h2>
-                </div>
-              ))}
-            </div>
-            {/* *********** */}
-            <div className="  text-white min-w-[300px] 2xl:h-auto  w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]">
-              <h1>Què m'agrada?</h1>
-              <br></br>
-              <h2>Disseny Web:</h2>
-              <p>
-                M'agrada dissenyar pàgines web, sobretot en llenguatges HTML,
-                CSS i JavaScript. Encara estic aprenent a dissenyar
-                profesional-ment
+              Un cop he agafat un notable domini en HTML i CSS, ara estic centrat en el desenvolupament 
+              d'aplicacions React utilitzant llibreries com Redux, Material UI, React Router
               </p>
-              <br></br>
-              <h2>VideoJocs:</h2>
-              <p>
-                M'agraden els videojocs online, els shooters, el League of
-                Legends i els jocs com Little Nightmares o It Takes Two.
-              </p>
-              <br></br>
-              <h2>Música:</h2>
-              <p>
-                M'agrada quasi qualsevol tipus de música, però sobretot el rap i
-                el trap.
-              </p>
-            </div>
           </div>
-        </div>
-        <br></br>
-        <Footer />
+         
       </div>
+     
+
+     </section>
+     
+     <section className="bg-[#4B4B69] min-h-[300px] ">
+      <div className=" text-center pt-[10px]" >
+        <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
+            About me 
+      </motion.div> 
+        </div>   
+
+    <div className="flex-wrap flex gap-8 justify-around  m-auto p-[50px]">
+      
+      <div className="box2 min-w-[300px] rounded-[10px] w-[30%] ">
+        <h2>Disseny Web:</h2> 
+        <p>M'agrada dissenyar pàgines web, sobretot en llenguatges HTML, CSS i JavaScript. Encara estic aprenent a dissenyar profesional-ment</p> 
+      </div>
+       
+
+      <div className="box2  min-w-[300px] rounded-[10px] w-[30%] ">
+        <h2>VideoJocs:</h2> 
+        <p>M'agraden els videojocs online, els shooters,  els jocs com Little Nightmares o It Takes Two.</p> 
+      </div>
+    
+
+      <div className="box2  min-w-[300px]  rounded-[10px] w-[30%] ">
+      <h2>Música:</h2> 
+        <p>M'agrada quasi qualsevol tipus de música, però sobretot el rap i el trap.</p> 
+       
+      </div>
+ 
+    </div>
+		
+    
+     </section>
+
+     <section className=" bg-[#2E3145] min-h-[300px]">
+        <ExperienciaLaboral/>
+     </section>
+     
+     
+     
     </>
   );
 }

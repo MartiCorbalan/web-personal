@@ -1,5 +1,7 @@
 import Header from "/components/header";
 import Footer from "/components/footer";
+import { useState } from "react";
+import { motion } from "framer-motion";
 export default function ExperienciaLaboral() {
   const experienceItems = [
     {
@@ -75,23 +77,49 @@ export default function ExperienciaLaboral() {
     },
   ];
 
+  const [actual, setActual] = useState(0);
+
+  const next = () => {
+  
+    if (actual >= experienceItems.length - 1) {
+      setActual(0);
+    } else {
+      setActual((n) => n + 1);
+    }
+  };
+
+  const last = () => {
+    if (actual <= 0) {
+      setActual(experienceItems.length - 1);
+    } else {
+      setActual(actual - 1);
+    }
+  };
+  const act = (m) => {
+    setActual(m);
+  };
   return (
     <>
-      <Header />
-      <div className="w-full min-h-screen bg-black ">
-        <br></br>
-        <div className=" max-w-5xl m-auto px-4 border-[8px] ">
-          <div className="text-white  text-center ">
-            <h1 className="text-4xl">Martí Corbalan Cruz</h1>
-            <p className="text-xl">Frontend Developer</p>
-          </div>
-        </div>
-        <br></br>
-        <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
-          {experienceItems.map((item, i) => (
+      
+      <div className="w-full min-h-screen  ">
+     
+       
+        
+          
+        <div className=" text-center mb-[90px]" >
+        <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
+            Experiència {"\n"} laboral 
+      </motion.div> 
+        </div>   
+        
+            
+         
+       
+      <div className="flex-wrap flex gap-8 justify-around m-auto "> 
+        {experienceItems.map((item, i) => (
             <div
               key={item.i}
-              className=" border-[2px] text-white min-w-[300px] 2xl:h-auto rounded-[10px] w-[30%] py-[40px] pr-[30px] pb-[50px] pl-[30px]"
+              className="border-[2px] text-white min-w-[300px] rounded-[10px]  py-[40px] pr-[30px] pb-[50px] pl-[30px] "
             >
               <h1>{item.titol}</h1>
               <br></br>
@@ -107,13 +135,15 @@ export default function ExperienciaLaboral() {
                 </button>
               )}
             </div>
-          ))}
-        </div>
-        <br></br>
-        <footer>
+          ))} 
+      </div>
+          
+        
+        
+      </div>
+      <footer>
           <Footer />
         </footer>
-      </div>
     </>
   );
 }
