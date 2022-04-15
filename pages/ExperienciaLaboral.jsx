@@ -24,7 +24,7 @@ export default function ExperienciaLaboral() {
         <ul className="text-lg">
           <li>- Suport tant en Hardware com en Software</li>
           <li>
-            - Instal·lació, manteniment i reparació d'ordinadors i impresores.{" "}
+            - Instal·lació, manteniment i reparació d-ordinadors i impresores.{" "}
           </li>
         </ul>
       ),
@@ -101,14 +101,14 @@ export default function ExperienciaLaboral() {
   return (
     <>
       
-      <div className="w-full min-h-screen  ">
+      <div className="w-full min-h-screen  p-[50px]">
      
        
         
           
         <div className=" text-center mb-[90px]" >
         <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
-            Experiència {"\n"} laboral 
+            Experiència  laboral 
       </motion.div> 
         </div>   
         
@@ -119,7 +119,7 @@ export default function ExperienciaLaboral() {
         {experienceItems.map((item, i) => (
             <div
               key={item.i}
-              className="border-[2px] text-white min-w-[300px] rounded-[10px]  py-[40px] pr-[30px] pb-[50px] pl-[30px] "
+              className="border-[2px] text-white min-w-[300px] rounded-[10px]  py-[40px] pr-[30px] pb-[50px] pl-[30px] bg-[#4F505F] shadow-lg shadow-[#425192]"
             >
               <h1>{item.titol}</h1>
               <br></br>
@@ -141,9 +141,7 @@ export default function ExperienciaLaboral() {
         
         
       </div>
-      <footer>
-          <Footer />
-        </footer>
+      
     </>
   );
 }

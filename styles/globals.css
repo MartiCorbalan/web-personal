@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 html,
 body {
   padding: 0;
@@ -51,8 +52,32 @@ p {
   background-color: #fff;
 }
 
+.subtitle{
+  display: grid;
+  font-weight: bold;
+  text-align: center;
+  width: 550px;
+  height: 250px;
+  border-radius: 4px;
+  
+}
+
 .card{
   width:  50%;
   opacity: 0.8;
   
+}
+.social-media-box{
+  display: grid;
+  place-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 4px;
+  
+}
+
+.icons{
+  font-size: 80px;
 }

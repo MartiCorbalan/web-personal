@@ -1,19 +1,53 @@
 import Footer from "../components/footer";
 import { projects } from "../components/projectes";
 import Header from "/components/header";
+import { useState } from "react";
+import { motion } from "framer-motion";
 export default function Portafoli() {
+  
+const [actual, setActual] = useState(0);
+
+const next = () => {
+  console.log("arriba");
+  console.log(imatges.length);
+  if (actual >= imatges.length - 1) {
+    setActual(0);
+  } else {
+    setActual((n) => n + 1);
+  }
+};
+
+const last = () => {
+  if (actual <= 0) {
+    setActual(imatges.length - 1);
+  } else {
+    setActual(actual - 1);
+  }
+};
+
+const act = (m) => {
+  setActual(m);
+};
   return (
     <>
-      <Header />
-      <div className="w-full min-h-screen bg-black ">
+     
+      <div className="  bg-[#141E61] p-[50px]">
         <br></br>
-        <div className=" max-w-5xl m-auto px-4 border-[8px] ">
-          <div className="text-white  text-center ">
-            <h1 className="text-4xl">Portafoli</h1>
-          </div>
-        </div>
+        <div className=" text-center " >
+        <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 20,}}  transition={{  duration: 0.8 }} >
+            Portafli 
+      </motion.div> 
+        </div>  
         <br></br>
-        <div className="border-[8px] pt-[10px] pr-[10px] pl-[10px] pb-[10px] flex-wrap flex gap-8 justify-around max-w-[1200px] m-auto">
+       
+
+        <div className=" flex-wrap flex gap-8 justify-around  m-auto">
+
+{/* <div>
+  {projects[actual]}
+</div> */}
+     
+
           {projects.map((item, i) => (
             <div
               key={item.i}
@@ -23,9 +57,6 @@ export default function Portafoli() {
                 src={item.img}
                 className="h-[250px] rounded-[10px] w-[450px]"
               />
-
-              <h1>{item.titol}</h1>
-              <br></br>
               <h2>{item.descripcio}</h2>
               <br></br>
               <p>{item.contignut}</p>
@@ -41,9 +72,9 @@ export default function Portafoli() {
               </div>
             </div>
           ))}
+        
         </div>
-        <br></br>
-        <Footer />
+       
       </div>
     </>
   );

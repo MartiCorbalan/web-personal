@@ -3,10 +3,7 @@ import Footer from "../../components/footer";
 import Header from "/components/header";
 import { motion } from "framer-motion";
 import ExperienciaLaboral from "../ExperienciaLaboral";
-
-const variants = {
-  
-}
+import Portafoli from "../Portafoli";
 
 export default function Main() {
  
@@ -14,28 +11,26 @@ export default function Main() {
   return (
     <>
       <Header />
-     <section className="   bg-[#6F6892]  min-h-[300px] ">
-      
+      <section className="bg-[#0F044C] text-white">      
         <div className=" text-center  ">
          
-          <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
+          <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px] mb-[20px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
             Martí Corbalan Cruz 
           </motion.div> 
-         
-          <div className="   cursor-default p-[50px] ">
-              <p className="w-[400px]">
-              Estic fent els primers passos com a desenvolupador frontend modern
-              Un cop he agafat un notable domini en HTML i CSS, ara estic centrat en el desenvolupament 
+        
+            <div className=" cursor-default p-[40px] text-[50px] ">
+              <p className="">
+              Estic fent els primers passos com a desenvolupador frontend modern <br></br>
+              Un cop he agafat un notable domini en HTML i CSS, ara estic centrat en el desenvolupament <br></br>
               d'aplicacions React utilitzant llibreries com Redux, Material UI, React Router
               </p>
           </div>
          
+         
       </div>
-     
 
-     </section>
-     
-     <section className="bg-[#4B4B69] min-h-[300px] ">
+    </section>     
+     <section className="bg-[#141E61] min-h-[300px] ">
       <div className=" text-center pt-[10px]" >
         <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
             About me 
@@ -44,19 +39,19 @@ export default function Main() {
 
     <div className="flex-wrap flex gap-8 justify-around  m-auto p-[50px]">
       
-      <div className="box2 min-w-[300px] rounded-[10px] w-[30%] ">
+      <div className="box2 bg-[#999] shadow-lg shadow-[#425192] min-w-[300px] rounded-[10px] w-[30%] ">
         <h2>Disseny Web:</h2> 
         <p>M'agrada dissenyar pàgines web, sobretot en llenguatges HTML, CSS i JavaScript. Encara estic aprenent a dissenyar profesional-ment</p> 
       </div>
        
 
-      <div className="box2  min-w-[300px] rounded-[10px] w-[30%] ">
+      <div className="box2 bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px] rounded-[10px] w-[30%] ">
         <h2>VideoJocs:</h2> 
         <p>M'agraden els videojocs online, els shooters,  els jocs com Little Nightmares o It Takes Two.</p> 
       </div>
     
 
-      <div className="box2  min-w-[300px]  rounded-[10px] w-[30%] ">
+      <div className="box2 bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px]  rounded-[10px] w-[30%] ">
       <h2>Música:</h2> 
         <p>M'agrada quasi qualsevol tipus de música, però sobretot el rap i el trap.</p> 
        
@@ -67,11 +62,17 @@ export default function Main() {
     
      </section>
 
-     <section className=" bg-[#2E3145] min-h-[300px]">
+     <section className=" bg-[#787A91] min-h-[300px]">
         <ExperienciaLaboral/>
      </section>
+
+     <section>
+       <Portafoli/>
+     </section>
      
-     
+     <section>
+       <Footer/>
+     </section>
      
     </>
   );

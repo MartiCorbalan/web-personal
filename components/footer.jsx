@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { motion } from "framer-motion";
 import {
   faGithub,
   faLinkedin,
@@ -36,30 +36,28 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-white text-black hover:bg-black hover:text-white flex-wrap flex gap-8 justify-around  ">
+      <div className="bg-[#EEEEEE] flex-wrap flex gap-8 justify-around  ">
         <div className=" flex-wrap gap-2 justify-around ">
-          <div className="ml-11">
-            <h3 className="ml-11">Xarxes Socials</h3>
-          </div>
-          <div className="flex">
-            {socialMedia.map((item) => (
+          
+          <motion.div className="text-[50px] text-center" animate={{x: 30,}}  transition={{  duration: 0.8 }}>
+            Xarxes Socials
+          </motion.div>
+         
+          <div className="flex-wrap flex gap-8 justify-around p-[50px]  ">
+          {socialMedia.map((item) => (
               <a
                 key={item.name}
                 href={item.link}
-                className={
-                  (item
-                    ? "bg-gray-900 text-white"
-                    : "text-gray-300 hover:bg-gray-700 hover:text-white ",
-                  "px-3 py-2 rounded-md text-sm font-medium")
-                }
+                
               >
-                <div className="flex sm:justify-between ">
+                <div className="text-center  social-media-box bg-[#999] shadow-lg shadow-[#425192]">
                   <ul>
+                    <div className="icons ">
+                        <FontAwesomeIcon icon={item.icon} />
+                    </div>
                     <div href={item.link}>
                       {item.nom}
-                      <div>
-                        <FontAwesomeIcon icon={item.icon} />
-                      </div>
+                      
                     </div>
                   </ul>
                 </div>
@@ -67,10 +65,7 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="min-w-[100px] ">
-          <h3>Contacte</h3>
-          <a href="mailto:martilluc01@gmail.com">martilluc01@gmail.com</a>
-        </div>
+       
       </div>
     </>
   );
