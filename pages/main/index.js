@@ -24,6 +24,11 @@ export default function Main() {
               Un cop he agafat un notable domini en HTML i CSS, ara estic centrat en el desenvolupament <br></br>
               d'aplicacions React utilitzant llibreries com Redux, Material UI, React Router
               </p>
+              <button className="bg-cyan-500 shadow-lg shadow-cyan-500/50 rounded mt-[10px]">
+              <a href="/CV_Marti.pdf" download="">
+                      Descarregar CV
+              </a>
+              </button>
           </div>
          
          
