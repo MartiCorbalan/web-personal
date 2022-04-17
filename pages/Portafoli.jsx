@@ -34,7 +34,7 @@ const act = (m) => {
        
         <div className=" text-center " >
         <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 20,}}  transition={{  duration: 0.8 }} >
-            Portafli 
+            Portafoli 
       </motion.div> 
         </div>  
         
@@ -73,11 +73,11 @@ const act = (m) => {
                     </p>
                     <div className="flex justify-around">
                           <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 mt-[6px]  rounded ">
-                                <a href={projects[actual === 0 ? projects.length - 1 : actual - 1].code}>Project</a>
+                                <a href={projects[actual].code}>Project</a>
                           </button>
                     
                           <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m">
-                                <a href={projects[actual === 0 ? projects.length - 1 : actual - 1].link}>Code</a>
+                                <a href={projects[actual].link}>Code</a>
                           </button>
                     </div>
                     
@@ -95,11 +95,11 @@ const act = (m) => {
                     </p>
                     <div className="flex justify-around">
                        <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 mt-[6px]  rounded">
-                              <a href={projects[actual === 0 ? projects.length - 1 : actual - 1].code}>Project</a>
+                              <a href={projects[actual >= projects.length - 1 ? 0 : actual + 1].code}>Project</a>
                     </button>
                    
                     <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ">
-                  <a href={projects[actual === 0 ? projects.length - 1 : actual - 1].link}>Code</a>
+                  <a href={projects[actual >= projects.length - 1 ? 0 : actual + 1].link}>Code</a>
                 </button>
                     </div>
                    
