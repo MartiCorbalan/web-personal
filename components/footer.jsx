@@ -36,12 +36,12 @@ export default function Footer() {
 
   return (
     <>
-      <div className="bg-[#EEEEEE] flex-wrap flex gap-8 justify-around  ">
+      <div className="bg-[#728A92] flex-wrap flex gap-8 justify-around  ">
         <div className=" flex-wrap gap-2 justify-around ">
-          
-          <motion.div className="text-[50px] text-center" animate={{x: 30,}}  transition={{  duration: 0.8 }}>
-            Xarxes Socials
-          </motion.div>
+           
+        <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px] mb-[20px] text-center" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
+            Xarxes Socials 
+          </motion.div> 
          
           <div className="flex-wrap flex gap-8 justify-around p-[50px]  ">
           {socialMedia.map((item) => (

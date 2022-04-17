@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <div className="bg-black text-white hover:bg-white hover:text-black ">
+    <div className="bg-[#728A92] ">
       <div className="flex sm:justify-between">
         {navigation.map((item) => (
           <a

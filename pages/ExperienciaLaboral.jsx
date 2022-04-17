@@ -101,7 +101,7 @@ export default function ExperienciaLaboral() {
   return (
     <>
       
-      <div className="w-full min-h-screen  p-[50px]">
+      <div className="w-full min-h-screen  p-[50px] text-[#e2e2e2]">
      
        
         
@@ -119,7 +119,7 @@ export default function ExperienciaLaboral() {
         {experienceItems.map((item, i) => (
             <div
               key={item.i}
-              className="border-[2px] text-white min-w-[300px] rounded-[10px]  py-[40px] pr-[30px] pb-[50px] pl-[30px] bg-[#4F505F] shadow-lg shadow-[#425192]"
+              className=" text-black min-w-[300px] w-[30%] rounded-[10px]  py-[40px] pr-[30px] pb-[50px] pl-[30px] bg-[#e2e2e2] shadow-lg shadow-[#425192]"
             >
               <h1>{item.titol}</h1>
               <br></br>
@@ -130,7 +130,7 @@ export default function ExperienciaLaboral() {
               <div>{item.description}</div>
               <br></br>
               {item.link && (
-                <button className="border-[2px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button className="border-[2px] border-black hover:bg-blue-700 text-black font-bold py-2 px-4 rounded">
                   <a href={item.link}>{item.lloc}</a>
                 </button>
               )}

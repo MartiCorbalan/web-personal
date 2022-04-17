@@ -6,7 +6,6 @@ export const projects = [
     img: "https://rapidapi.com/blog/wp-content/uploads/2020/03/friend_list.png",
     contignut: "Aplicació d'una api rest en React",
     link: "https://github.com/MartiCorbalan/api-rest-react",
-
     code: "https://marticorbalan.github.io/api-rest-react/",
   },
   {
@@ -24,7 +23,7 @@ export const projects = [
     titol: "Tres en ratlla",
     descripcio: "Tres en ratlla en React",
     img: "https://thumbs.dreamstime.com/b/tic-tac-toe-game-icon-black-isolated-white-background-vector-illustration-tic-tac-toe-game-icon-game-board-black-isolated-134339916.jpg",
-    contignut: "Tres en ratlla fet en react, amb el framework de react-redux",
+    contignut: "Tic tac toe fet en react, amb el framework de react-redux",
     link: "https://github.com/MartiCorbalan/tres-en-ratlla",
 
     code: " https://marticorbalan.github.io/tres-en-ratlla/",

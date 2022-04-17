@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <>
       <Header />
-      <section className="bg-[#0F044C] text-white">      
+      <section className="bg-[#2E5266] text-[#E2C044] bold">      
         <div className=" text-center  ">
          
           <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px] mb-[20px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
@@ -30,40 +30,55 @@ export default function Main() {
       </div>
 
     </section>     
-     <section className="bg-[#141E61] min-h-[300px] ">
-      <div className=" text-center pt-[10px]" >
+     <section className="bg-[#2E5266] min-h-[300px] text-[#75C9C8]  p-[20px]  ">
+       <div className="border-t-[2px] border-b-[2px] border-black w-[70%] m-auto">
+          <div className=" text-center pt-[10px]" >
         <motion.div className="text-[40px] font-fuente_titulo sm:text-[100px]" animate={{y: 50,}}  transition={{  duration: 0.8 }} >
             About me 
       </motion.div> 
         </div>   
 
-    <div className="flex-wrap flex gap-8 justify-around  m-auto p-[50px]">
+    <div className="flex-wrap flex gap-8 justify-around m-auto p-[50px]">
       
-      <div className="box2 bg-[#999] shadow-lg shadow-[#425192] min-w-[300px] rounded-[10px] w-[30%] ">
-        <h2>Disseny Web:</h2> 
-        <p>M'agrada dissenyar pàgines web, sobretot en llenguatges HTML, CSS i JavaScript. Encara estic aprenent a dissenyar profesional-ment</p> 
+      <div className="box2 text-[#007991] bg-[#999] shadow-lg shadow-[#425192] min-w-[300px]   ">
+        <h2>Disseny Web</h2> 
       </div>
-       
 
-      <div className="box2 bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px] rounded-[10px] w-[30%] ">
-        <h2>VideoJocs:</h2> 
-        <p>M'agraden els videojocs online, els shooters,  els jocs com Little Nightmares o It Takes Two.</p> 
+      <div className="box2 text-[#007991]  bg-[#999] shadow-lg shadow-[#425192] min-w-[300px]   ">
+        <h2>Esport</h2> 
+      
+      </div>
+
+      <div className="box2 text-[#007991] bg-[#999] shadow-lg shadow-[#425192] min-w-[300px]   ">
+        <h2>Animals</h2> 
+      
+      </div>
+      <div className="box2 bg-[#999] text-[#007991] shadow-lg shadow-[#425192] min-w-[300px]   ">
+        <h2>Viajar</h2> 
+        
+      </div>
+
+      <div className="box2 text-[#007991] bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px]   ">
+        <h2>VideoJocs</h2> 
       </div>
     
 
-      <div className="box2 bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px]  rounded-[10px] w-[30%] ">
-      <h2>Música:</h2> 
-        <p>M'agrada quasi qualsevol tipus de música, però sobretot el rap i el trap.</p> 
-       
+      <div className="box2 text-[#007991] bg-[#999] shadow-lg shadow-[#425192]  min-w-[300px]   ">
+      <h2>Música</h2> 
       </div>
  
     </div>
+       </div>
+     
 		
     
      </section>
 
-     <section className=" bg-[#787A91] min-h-[300px]">
-        <ExperienciaLaboral/>
+     <section className=" bg-[#2E5266] min-h-[300px]">
+       <div className="border-b-[2px] border-black w-[70%] m-auto">
+         <ExperienciaLaboral/>
+       </div>
+        
      </section>
 
      <section>

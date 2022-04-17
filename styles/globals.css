@@ -41,15 +41,15 @@ h6 {
 p {
   font-size: 20px;
 }
-
+.imatge{
+  transform: rotate(180deg);
+}
 .box2{
   display: grid;
   font-weight: bold;
   text-align: center;
-  width: 250px;
-  height: 250px;
-  border-radius: 4px;
-  background-color: #fff;
+  border-radius: 20px;
+  
 }
 
 .subtitle{
